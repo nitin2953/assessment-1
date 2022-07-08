@@ -1,0 +1,98 @@
+i {
+	/* display: inline-block; */
+	flex: 0 0 auto; /* 30px */
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	/* vertical-align: middle; */
+
+	background-repeat: no-repeat;
+	background-position: center;
+}
+li > i {
+	margin-left: 10px;
+}
+
+.pink {
+	background-color: var(--pink-800);
+}
+.green {
+	background-color: var(--green-500);
+}
+
+.check {
+	background-image: url(/images/check.svg);
+}
+.wrong {
+	background-image: url(/images/wrong.svg);
+}
+
+/*  */
+
+i.arrow-down {
+	width: 14px;
+	height: 10px;
+	background-image: url(/images/arrow-down.svg);
+	margin: 10px auto;
+}
+
+/*  */
+
+.popup-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: fit-content;
+	padding: 10px 10px;
+	background-color: var(--pink-800);
+	color: var(--white);
+	font-weight: 700;
+	font-size: 15px;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.25s, box-shadow 0.25s;
+	cursor: pointer;
+}
+.popup-btn:hover {
+	box-shadow: 0px 12px 24px var(--ping-bx-2);
+	background-color: var(--pink-700);
+}
+.popup-btn.active {
+	box-shadow: none;
+}
+.popup-btn.active:hover {
+	box-shadow: 0px 12px 24px var(--ping-bx-2);
+}
+
+.popup-btn svg {
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	border-radius: 50%;
+	transition: background-color 0.25s, transform 0.25s;
+}
+.popup-btn:is(.active, :hover) svg {
+	color: var(--pink-800);
+	background-color: var(--white);
+	transform: rotate(45deg);
+}
+
+.popup-model {
+	background: var(--pink-100);
+	box-shadow: 0px 12px 24px var(--ping-bx-1);
+	border-radius: 8px;
+}
+
+.popup-btn.active::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	/* background: #f001; */
+	cursor: default;
+	z-index: 1;
+}
+
+hr {
+	border: none;
+	outline: 1px solid var(--pink-400);
+}

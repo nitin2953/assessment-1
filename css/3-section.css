@@ -1,0 +1,171 @@
+section {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: start;
+	gap: 36px;
+	/* outline: 1px dashed red; */
+}
+
+content {
+	display: flex;
+	flex-direction: column;
+	/* gap: 20px; */
+	background-color: var(--blue-100);
+	padding: 20px;
+	border-radius: 8px;
+}
+
+h2 {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	color: var(--pink-800);
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	/* line-height: 30px; */
+}
+h2 span {
+	display: inline-grid;
+	place-content: center;
+	color: var(--white);
+	font-size: 16px;
+	background-color: var(--pink-800);
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+}
+
+flex {
+	display: flex;
+	gap: 10px;
+}
+.col {
+	flex-direction: column;
+}
+
+/* Variants */
+fixed-grid-1 {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 3fr 2fr 1.67fr;
+}
+
+#section-1 {
+	padding-bottom: 50px;
+}
+
+/*  */
+
+#section-2 {
+	padding: 30px 0 45px 30px;
+	gap: 25px;
+}
+
+#section-2 content {
+	padding: 10px;
+}
+
+#section-2 img {
+	transform: translateY(66px);
+}
+
+fixed-grid-2 {
+	display: grid;
+	gap: 17px;
+	grid-template-columns: 1.31fr 1fr;
+}
+
+#section-2 strong {
+	margin-bottom: 5px;
+}
+
+/*  */
+
+#section-3 {
+	padding: 30px 0;
+	gap: 24px;
+}
+
+#section-3 h2 {
+	margin: 0;
+}
+
+fixed-grid-3 {
+	padding: 20px 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1.32fr 1fr;
+	max-width: 620px;
+}
+
+#section-3 content {
+	padding: 10px;
+}
+
+#section-3 ul {
+	margin-bottom: 10px;
+}
+
+#section-3 strong {
+	margin-bottom: 5px;
+}
+
+#custom-1 {
+	gap: 5px;
+}
+
+#custom-1 > i {
+	margin: 5px auto;
+}
+
+#custom-2 {
+	text-align: center;
+	font-weight: 700;
+	background-color: var(--blue-200);
+	border-radius: 6px;
+}
+
+#custom-3 {
+	text-align: center;
+	background-color: var(--blue-100);
+	border-radius: 6px;
+	gap: 0;
+}
+
+#custom-3 > * {
+	flex-basis: 100%;
+}
+
+/*  */
+
+#section-4 {
+	padding: 40px 70px 0 73px;
+	grid-template-columns: 1fr auto;
+	gap: 57px;
+}
+
+#section-4 .col {
+	gap: 12px;
+}
+
+#section-4 img {
+	transform: translateY(55px);
+}
+
+#section-4 h2 {
+	margin-bottom: 8px;
+}
+
+#section-4 content {
+	padding: 10px;
+}
+
+#section-4 #custom-3 {
+	padding-top: 12px;
+	justify-content: center;
+}
+
+#section-4 #custom-3 > * {
+	flex-basis: 95px;
+}

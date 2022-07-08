@@ -1,0 +1,81 @@
+section {
+	position: relative;
+}
+
+section::before {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: calc(100% + 5.6px);
+	height: 100%;
+	border: 0 solid var(--pink-400);
+	z-index: -1;
+}
+
+/* border-radius */
+.↖::before {
+	border-top-left-radius: 22px;
+}
+.↗::before {
+	border-top-right-radius: 22px;
+}
+.↘::before {
+	border-bottom-right-radius: 22px;
+}
+.↙::before {
+	border-bottom-left-radius: 22px;
+}
+
+/* border-width */
+.↑::before {
+	border-top-width: 6px;
+}
+.→::before {
+	right: 0;
+	border-right-width: 6px;
+}
+.↓::before {
+	border-bottom-width: 6px;
+}
+.←::before {
+	left: 0;
+	border-left-width: 6px;
+}
+
+/*
+                  top | right | bottom | left
+   border-width:   ↑  |   →   |    ↓   |   ←
+   border-radius:  ↖  |   ↗   |    ↘   |   ↙
+*/
+
+/*
+
+← ↓   ↙
+
+↑ → ↓   ↗ ↘
+
+↑ ← ↓   ↖ ↙
+
+↑ →   ↗
+
+*/
+
+#section-1::before {
+	left: 85px;
+}
+
+#section-2::before {
+	right: 67px;
+	top: -5px;
+	height: calc(100% + 10px);
+}
+
+#section-3::before {
+	left: 75px;
+}
+
+#section-4::before {
+	right: 145px;
+	top: -6px;
+	height: 50%;
+}

@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	/* outline: .1px solid red; */
+}
+
+button {
+	font: inherit;
+}
+
+:root {
+	--pink-800: #d1325d;
+	--pink-700: #ed4875;
+	--pink-400: #ffb3cb;
+	--pink-200: #ffe2eb;
+	--pink-100: #ffebf0;
+	--ping-bx-1: rgba(208, 126, 148, 0.4);
+	--ping-bx-2: rgba(209, 50, 93, 0.4);
+
+	--blue-700: #236eff;
+	--blue-200: #aac7ff;
+	--blue-100: #e8f0ff;
+
+	--green-500: #3fd283;
+
+	--black: #000000;
+	--white: #ffffff;
+}
+
+/*
+var(--pink-800)
+var(--pink-700)
+var(--pink-400)
+var(--pink-200)
+var(--pink-100)
+
+var(--ping-bx-1)
+var(--ping-bx-2)
+
+var(--blue-700)
+var(--blue-200)
+var(--blue-100)
+
+var(--green-500)
+
+var(--black)
+var(--white)
+*/
+
+html {
+	background-color: #fff;
+	font-family: "Manrope", sans-serif;
+}
+
+body {
+	width: 960px;
+	margin: auto;
+	padding: 38px 60px 40px;
+
+	/* outline: 2px dashed var(--pink-800); */
+	/* overflow: hidden; */
+}
+
+img {
+	display: block;
+}
+
+ul {
+	list-style: none;
+	list-style-position: outside;
+	padding-left: 24px;
+	margin-bottom: 25px;
+}
+
+li {
+	position: relative;
+	display: inline-flex;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+li::before {
+	content: "•";
+	position: absolute;
+	left: -17px;
+}

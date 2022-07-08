@@ -1,0 +1,17 @@
+header {
+	background: var(--pink-800);
+	padding: 20px 30px;
+	border-radius: 8px;
+	margin-bottom: 60px;
+}
+
+header h1 {
+	color: var(--white);
+	font-size: 48px;
+	font-weight: 800;
+}
+
+header span {
+	color: var(--pink-400);
+	font-size: 32px;
+}
